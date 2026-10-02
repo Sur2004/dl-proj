@@ -1,4 +1,4 @@
-# Skin Lesion EfficientNetB0 — Streamlit
+# Skin Lesion 
 
 This project converts the supplied Google Colab notebook into a Streamlit inference app.
 
