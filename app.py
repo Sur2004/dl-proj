@@ -1,4 +1,4 @@
-```python
+
 import streamlit as st
 import numpy as np
 import tensorflow as tf
@@ -494,4 +494,3 @@ Built for educational and research purposes.
 
 </div>
 """, unsafe_allow_html=True)
-```
