@@ -440,58 +440,16 @@ if "predictions" in st.session_state:
 # EMPTY STATE
 # ============================================================
 else:
+    st.markdown("## 🖼️ Upload an image to begin")
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    st.write(
+        "Choose a JPG, JPEG, or PNG skin-lesion image "
+        "using the uploader above."
+    )
 
-    with col2:
-
-        st.markdown(
-            """
-            <div style="
-                background: linear-gradient(135deg, #eef2ff, #ecfeff);
-                border: 2px solid #c7d2fe;
-                border-radius: 20px;
-                padding: 35px;
-                text-align: center;
-                box-shadow: 0 8px 25px rgba(15,23,42,0.08);
-            ">
-
-                <div style="
-                    font-size: 55px;
-                    margin-bottom: 10px;
-                ">
-                    🖼️
-                </div>
-
-                <h2 style="
-                    color: #1e293b;
-                    margin-bottom: 10px;
-                ">
-                    Upload an image to begin
-                </h2>
-
-                <p style="
-                    color: #475569;
-                    font-size: 16px;
-                    line-height: 1.6;
-                ">
-                    Choose a JPG, JPEG, or PNG skin-lesion image
-                    using the uploader above.
-                </p>
-
-                <p style="
-                    color: #64748b;
-                    font-size: 14px;
-                ">
-                    🧠 EfficientNetB0 &nbsp; • &nbsp;
-                    📐 224 × 224 &nbsp; • &nbsp;
-                    🧬 7 Classes
-                </p>
-
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+    st.info(
+        "🧠 EfficientNetB0   •   📐 224 × 224   •   🧬 7 Classes"
+    )
 # ============================================================
 # DISCLAIMER
 # ============================================================
