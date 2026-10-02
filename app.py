@@ -436,20 +436,7 @@ if "predictions" in st.session_state:
             )
 
 
-# ============================================================
-# EMPTY STATE
-# ============================================================
-else:
-    st.markdown("## 🖼️ Upload an image to begin")
 
-    st.write(
-        "Choose a JPG, JPEG, or PNG skin-lesion image "
-        "using the uploader above."
-    )
-
-    st.info(
-        "🧠 EfficientNetB0   •   📐 224 × 224   •   🧬 7 Classes"
-    )
 # ============================================================
 # DISCLAIMER
 # ============================================================
