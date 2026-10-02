@@ -1,6 +1,5 @@
 # Skin Lesion 
 
-This project converts the supplied Google Colab notebook into a Streamlit inference app.
 
 ## 1. Train the model
 
