@@ -442,25 +442,23 @@ if "predictions" in st.session_state:
 
 else:
 
-    st.markdown("""
-    <div class="card" style="text-align:center; padding:45px;">
+    st.info("🖼️ **No image uploaded yet**")
 
-        <div style="font-size:60px;">
-            🖼️
-        </div>
+    st.markdown(
+        """
+        ### Upload an image to begin
 
-        <h2>
-            Upload an image to begin
-        </h2>
+        Upload a **JPG, JPEG, or PNG** skin-lesion image using
+        the uploader above.
 
-        <p>
-            The EfficientNetB0 model will analyze the uploaded
-            image and display the class probabilities.
-        </p>
+        The **EfficientNetB0** model will analyze the image and
+        display the predicted class and probability distribution.
+        """
+    )
 
-    </div>
-    """, unsafe_allow_html=True)
-
+    st.caption(
+        "Supported formats: JPG • JPEG • PNG"
+    )
 
 # ============================================================
 # DISCLAIMER
